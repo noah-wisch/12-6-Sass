@@ -1,0 +1,14 @@
+@import 'node_modules/foundation-sites/scss/foundation';
+
+@include foundation-global-styles;
+@include foundation-grid;
+
+$large-screen:800px;
+
+@import "header";
+@import "fieldnotes";
+@import "footer";
+
+
+
+

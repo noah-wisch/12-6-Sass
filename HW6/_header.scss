@@ -1,0 +1,141 @@
+$grid-row-width: 100rem;
+$belowice-padding:590px;
+$below-ice-text-margin:-480px;
+
+header {
+    @include grid-row();
+    
+        .email-list {
+            @include grid-column(4);
+            text-decoration:none;
+        }
+
+        nav {
+            @include grid-column(4);
+            text-align:center;
+
+                ul {
+                    display:flex;
+                    list-style:none;
+                    justify-content:space-between;
+
+                    a {
+                        text-decoration:none;
+                        font-weight:bold;
+                        color:#AEA288;
+                    }
+                }
+        }
+
+        .signing{
+            @include grid-column(4);
+            text-decoration:none;
+            width:9%;
+        }
+}
+
+#ice {
+    background-image:url(https://0041b200f62b3b1e2348-1120f113e97866ae33baf6d37d9ffbd6.ssl.cf5.rackcdn.com/images/_1300x510_crop_center-center_85/blackice_hero.jpg);
+
+    @include grid-row();
+
+        .icetext {
+            @include grid-column(12);
+            text-align:center;
+            color:#FFF;
+            z-index:5;
+            font-size:.8em;
+            padding: 100px 0;
+
+                h3 {
+                    border:2px solid #FFF;
+                    margin-left:1%;
+                    margin-right:1%;
+                    padding:10px 2px;
+                    font-size:.7em;
+
+                        a {
+                            text-decoration:none;
+                            color:#FFF;
+                        }
+                }
+        }
+}
+
+.belowice {
+    @include grid-row();
+
+    #lunar {
+        @include grid-column(8);
+        background-image:url(https://0041b200f62b3b1e2348-1120f113e97866ae33baf6d37d9ffbd6.ssl.cf5.rackcdn.com/images/lunacy_AB.jpg);
+        // padding-top:$belowice-padding;
+        z-index:0;
+        background-repeat:no-repeat;
+        background-position:center;
+        // height:;
+
+        .lunartext {
+            text-align:center;
+            color:#FFF;
+            z-index:5;
+            font-size:.8em;
+            // margin-top:$below-ice-text-margin;
+
+             h2 {
+                        font-size:1.2em;
+                    }
+                    
+                h3 {
+                    border:2px solid #FFF;
+                    margin-left:1%;
+                    margin-right:1%;
+                    padding:10px 2px 10px 2px;
+                    font-size:.7em;
+
+                        a {
+                            text-decoration:none;
+                            color:#FFF;
+                        }
+                }
+        }
+}
+
+        #events {
+            @include grid-column(4);
+            background-image:url(https://0041b200f62b3b1e2348-1120f113e97866ae33baf6d37d9ffbd6.ssl.cf5.rackcdn.com/images/B_shop_deboss.jpg);
+            // padding-top:$belowice-padding;
+            z-index:0;
+            background-repeat:no-repeat;
+            background-position:center;
+            height:420px;
+
+            .eventstext {
+                text-align:center;
+                color:#FFF;
+                z-index:5;
+                font-size:.8em;
+                // margin-top:-482px;
+
+                    h1 {
+                        font-weight:lighter;
+                    }
+
+                    h2 {
+                        font-size:1.2em;
+                    }
+
+                    h3 {
+                        border:2px solid #FFF;
+                        margin-left:1%;
+                        margin-right:1%;
+                        padding:10px 2px 10px 2px;
+                        font-size:.7em;
+
+                            a {
+                                text-decoration:none;
+                                color:#FFF;
+                                }
+                        }   
+                }
+            }
+}
