@@ -1288,6 +1288,9 @@ button {
     margin-left: 0;
     margin-right: 0;
     float: left; } }
+body {
+  background-color: lightgreen; }
+
 header {
   max-width: 75rem;
   margin-left: auto;
@@ -1312,7 +1315,8 @@ header {
 #hero {
   max-width: 75rem;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  background-color: lightsalmon; }
   #hero::before, #hero::after {
     content: ' ';
     display: table; }
@@ -1333,7 +1337,8 @@ header {
 #details {
   max-width: 75rem;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  background-color: pink; }
   #details::before, #details::after {
     content: ' ';
     display: table; }
@@ -1351,10 +1356,23 @@ header {
     #details p:last-child:not(:first-child) {
       float: right; }
   #details div {
-    width: 50%;
+    width: 100%;
     float: left;
     padding-left: 0.625rem;
     padding-right: 0.625rem; }
+    @media screen and (min-width: 53.125em) {
+      #details div {
+        width: 50%;
+        float: left;
+        padding-left: 0.625rem;
+        padding-right: 0.625rem; } }
+  @media screen and (min-width: 53.125em) and (min-width: 40em) {
+    #details div {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem; } }
+    @media screen and (min-width: 53.125em) {
+        #details div:last-child:not(:first-child) {
+          float: right; } }
     @media screen and (min-width: 40em) {
       #details div {
         padding-left: 0.9375rem;
@@ -1365,7 +1383,8 @@ header {
 #triple {
   max-width: 75rem;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  background-color: lightblue; }
   #triple::before, #triple::after {
     content: ' ';
     display: table; }

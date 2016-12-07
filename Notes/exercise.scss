@@ -3,6 +3,10 @@
 @include foundation-global-styles;
 @include foundation-grid;
 
+body {
+    background-color:lightgreen;
+}
+
 header {
     @include grid-row();
 
@@ -13,6 +17,7 @@ header {
 
 #hero {
     @include grid-row();
+    background-color:lightsalmon;
 
     h2 {
         @include grid-column(12);
@@ -21,20 +26,26 @@ header {
 
 #details {
     @include grid-row();
+    background-color:pink;
 
     p {
         @include grid-column(12);
     }
 
     div {
+        @include breakpoint(850px) {
             @include grid-column(6);
+        }
+
+        @include grid-column(12);
     }
 }
 
 #triple {
     @include grid-row();
+    background-color:lightblue;
 
     div {
         @include grid-column(4);
     }
-}
+} 
