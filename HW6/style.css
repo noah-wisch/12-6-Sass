@@ -1347,10 +1347,11 @@ header {
       float: right; }
 
 #ice {
-  background-image: url(https://0041b200f62b3b1e2348-1120f113e97866ae33baf6d37d9ffbd6.ssl.cf5.rackcdn.com/images/_1300x510_crop_center-center_85/blackice_hero.jpg);
   max-width: 100rem;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  background-image: url(https://0041b200f62b3b1e2348-1120f113e97866ae33baf6d37d9ffbd6.ssl.cf5.rackcdn.com/images/_1300x510_crop_center-center_85/blackice_hero.jpg);
+  max-width: 100%; }
   #ice::before, #ice::after {
     content: ' ';
     display: table; }
@@ -1374,7 +1375,7 @@ header {
       float: right; }
     #ice .icetext h3 {
       border: 2px solid #FFF;
-      margin: 0 20%;
+      margin: 0 40%;
       padding: 10px 2px;
       font-size: .7em; }
       #ice .icetext h3 a {
@@ -1415,7 +1416,7 @@ header {
         font-size: 1.2em; }
       .belowice #lunar .lunartext h3 {
         border: 2px solid #FFF;
-        margin: 0 20%;
+        margin: 0 35%;
         padding: 10px 2px;
         font-size: .7em; }
         .belowice #lunar .lunartext h3 a {
@@ -1490,16 +1491,16 @@ header {
     #pagebreak h2:last-child:not(:first-child) {
       float: right; }
 
-.fnotes {
+.fnotes1 {
   max-width: 100rem;
   margin-left: auto;
   margin-right: auto; }
-  .fnotes::before, .fnotes::after {
+  .fnotes1::before, .fnotes1::after {
     content: ' ';
     display: table; }
-  .fnotes::after {
+  .fnotes1::after {
     clear: both; }
-  .fnotes ul {
+  .fnotes1 ul {
     width: 100%;
     float: left;
     padding-left: 0.625rem;
@@ -1509,18 +1510,156 @@ header {
     list-style: none;
     text-align: center; }
     @media screen and (min-width: 40em) {
-      .fnotes ul {
+      .fnotes1 ul {
         padding-left: 0.9375rem;
         padding-right: 0.9375rem; } }
-    .fnotes ul:last-child:not(:first-child) {
+    .fnotes1 ul:last-child:not(:first-child) {
       float: right; }
-    .fnotes ul li {
-      text-decoration: none; }
-      .fnotes ul li .name {
+    .fnotes1 ul li {
+      text-decoration: none;
+      border: 1px solid lightgray; }
+      .fnotes1 ul li .name {
         font-weight: bold;
         text-transform: uppercase; }
-      .fnotes ul li .price {
+      .fnotes1 ul li .price {
         font-weight: bold;
         color: #9c3e14; }
+
+.fnotes2 {
+  max-width: 100rem;
+  margin-left: auto;
+  margin-right: auto; }
+  .fnotes2::before, .fnotes2::after {
+    content: ' ';
+    display: table; }
+  .fnotes2::after {
+    clear: both; }
+  .fnotes2 ul {
+    width: 100%;
+    float: left;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    text-align: center; }
+    @media screen and (min-width: 40em) {
+      .fnotes2 ul {
+        padding-left: 0.9375rem;
+        padding-right: 0.9375rem; } }
+    .fnotes2 ul:last-child:not(:first-child) {
+      float: right; }
+    .fnotes2 ul li {
+      text-decoration: none;
+      border: 1px solid lightgray; }
+      .fnotes2 ul li .name {
+        font-weight: bold;
+        text-transform: uppercase; }
+      .fnotes2 ul li .price {
+        font-weight: bold;
+        color: #9c3e14; }
+
+footer {
+  max-width: 100rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(https://0041b200f62b3b1e2348-1120f113e97866ae33baf6d37d9ffbd6.ssl.cf5.rackcdn.com/images/kraft-bg.jpg);
+  bottom: 0;
+  max-width: 100%; }
+  footer::before, footer::after {
+    content: ' ';
+    display: table; }
+  footer::after {
+    clear: both; }
+  footer #ftopbar h3 {
+    width: 33.33333%;
+    float: left;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    text-align: center; }
+    @media screen and (min-width: 40em) {
+      footer #ftopbar h3 {
+        padding-left: 0.9375rem;
+        padding-right: 0.9375rem; } }
+    footer #ftopbar h3:last-child:not(:first-child) {
+      float: right; }
+  footer #ftopbar h1 {
+    width: 33.33333%;
+    float: left;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    text-align: center; }
+    @media screen and (min-width: 40em) {
+      footer #ftopbar h1 {
+        padding-left: 0.9375rem;
+        padding-right: 0.9375rem; } }
+    footer #ftopbar h1:last-child:not(:first-child) {
+      float: right; }
+    footer #ftopbar h1 a {
+      text-decoration: none;
+      color: black; }
+  footer #fproductslist {
+    max-width: 100rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between; }
+    footer #fproductslist::before, footer #fproductslist::after {
+      content: ' ';
+      display: table; }
+    footer #fproductslist::after {
+      clear: both; }
+    footer #fproductslist #footleft {
+      width: 25%;
+      float: left;
+      padding-left: 0.625rem;
+      padding-right: 0.625rem;
+      display: inline-block;
+      list-style: none;
+      font-weight: bold; }
+      @media screen and (min-width: 40em) {
+        footer #fproductslist #footleft {
+          padding-left: 0.9375rem;
+          padding-right: 0.9375rem; } }
+      footer #fproductslist #footleft:last-child:not(:first-child) {
+        float: right; }
+    footer #fproductslist #flimited ul {
+      width: 25%;
+      float: left;
+      padding-left: 0.625rem;
+      padding-right: 0.625rem;
+      display: flex;
+      list-style: none;
+      font-weight: bold; }
+      @media screen and (min-width: 40em) {
+        footer #fproductslist #flimited ul {
+          padding-left: 0.9375rem;
+          padding-right: 0.9375rem; } }
+      footer #fproductslist #flimited ul:last-child:not(:first-child) {
+        float: right; }
+    footer #fproductslist #quote p {
+      width: 25%;
+      float: left;
+      padding-left: 0.625rem;
+      padding-right: 0.625rem;
+      text-align: center;
+      font-weight: bold; }
+      @media screen and (min-width: 40em) {
+        footer #fproductslist #quote p {
+          padding-left: 0.9375rem;
+          padding-right: 0.9375rem; } }
+      footer #fproductslist #quote p:last-child:not(:first-child) {
+        float: right; }
+    footer #fproductslist form {
+      width: 25%;
+      float: left;
+      padding-left: 0.625rem;
+      padding-right: 0.625rem; }
+      @media screen and (min-width: 40em) {
+        footer #fproductslist form {
+          padding-left: 0.9375rem;
+          padding-right: 0.9375rem; } }
+      footer #fproductslist form:last-child:not(:first-child) {
+        float: right; }
 
 /*# sourceMappingURL=style.css.map */

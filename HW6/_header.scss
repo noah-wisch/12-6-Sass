@@ -41,9 +41,9 @@ header {
 }
 
 #ice {
-    background-image:url(https://0041b200f62b3b1e2348-1120f113e97866ae33baf6d37d9ffbd6.ssl.cf5.rackcdn.com/images/_1300x510_crop_center-center_85/blackice_hero.jpg);
-
     @include grid-row();
+        background-image:url(https://0041b200f62b3b1e2348-1120f113e97866ae33baf6d37d9ffbd6.ssl.cf5.rackcdn.com/images/_1300x510_crop_center-center_85/blackice_hero.jpg);
+        max-width: 100%;
 
         .icetext {
             @include grid-column(12);
@@ -55,7 +55,7 @@ header {
 
                 h3 {
                     border:2px solid $over-text-color;
-                    margin:0 20%;
+                    margin:0 40%;
                     padding:10px 2px;
                     font-size:.7em;
 
@@ -97,7 +97,7 @@ header {
                     
                 h3 {
                     border:2px solid $over-text-color;
-                    margin:0 20%;
+                    margin:0 35%;
                     padding:10px 2px;
                     font-size:.7em;
 
@@ -165,7 +165,7 @@ header {
         }
 }
 
-.fnotes {
+.fnotes1 {
     @include grid-row();
 
     ul {
@@ -177,6 +177,7 @@ header {
 
             li {
                 text-decoration:none;
+                border:$border;
 
                 .name {
                     font-weight:bold;
@@ -189,4 +190,88 @@ header {
                 }
             }
     }
+}
+
+.fnotes2 {
+    @include grid-row();
+
+    ul {
+        @include grid-column(12);
+        display:flex;
+        justify-content:space-between;
+        list-style:none;
+        text-align:center;
+
+            li {
+                text-decoration:none;
+                border:$border;
+
+                .name {
+                    font-weight:bold;
+                    text-transform:uppercase;
+                }
+
+                .price {
+                    font-weight:bold;
+                    color:$price-color;
+                }
+            }
+    }
+}
+
+footer {
+    @include grid-row();
+
+    background-image: url(https://0041b200f62b3b1e2348-1120f113e97866ae33baf6d37d9ffbd6.ssl.cf5.rackcdn.com/images/kraft-bg.jpg);
+    bottom:0;
+    max-width: 100%;
+
+        #ftopbar {
+
+            h3 {
+                @include grid-column(4);
+                text-align:center;
+            }
+
+            h1 {
+                @include grid-column(4);
+                text-align:center;
+
+                a {
+                    text-decoration:none;
+                    color:black;
+                }
+            }
+    }
+
+        #fproductslist {
+            @include grid-row();
+            display:flex;
+            justify-content:space-between;
+
+                #footleft {
+                    @include grid-column(3);
+                    display:inline-block;
+                    list-style:none;
+                    font-weight:bold;
+                }
+
+                #flimited ul {
+                    @include grid-column(3);
+                    display:flex;
+                    list-style:none;
+                    font-weight:bold;
+                }
+
+                #quote p {
+                    @include grid-column(3);
+                    text-align:center;
+                    font-weight:bold;
+                } 
+
+                form {
+                    @include grid-column(3);
+
+                }               
+        }
 }
