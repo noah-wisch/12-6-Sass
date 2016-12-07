@@ -1,0 +1,56 @@
+footer {
+    @include grid-row();
+
+    background-image: url(https://0041b200f62b3b1e2348-1120f113e97866ae33baf6d37d9ffbd6.ssl.cf5.rackcdn.com/images/kraft-bg.jpg);
+    bottom:0;
+    max-width: 100%;
+
+        #ftopbar {
+
+            h3 {
+                @include grid-column(4);
+                text-align:center;
+            }
+
+            h1 {
+                @include grid-column(4);
+                text-align:center;
+
+                a {
+                    text-decoration:none;
+                    color:black;
+                }
+            }
+    }
+
+        #fproductslist {
+            @include grid-row();
+            display:flex;
+            justify-content:space-between;
+
+                #footleft {
+                    @include grid-column(3);
+                    display:inline-block;
+                    list-style:none;
+                    font-weight:bold;
+                }
+
+                #flimited ul {
+                    @include grid-column(3);
+                    display:flex;
+                    list-style:none;
+                    font-weight:bold;
+                }
+
+                #quote p {
+                    @include grid-column(3);
+                    text-align:center;
+                    font-weight:bold;
+                } 
+
+                form {
+                    @include grid-column(3);
+
+                }               
+        }
+}

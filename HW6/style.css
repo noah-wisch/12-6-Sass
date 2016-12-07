@@ -1662,4 +1662,107 @@ footer {
       footer #fproductslist form:last-child:not(:first-child) {
         float: right; }
 
+footer {
+  max-width: 100rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(https://0041b200f62b3b1e2348-1120f113e97866ae33baf6d37d9ffbd6.ssl.cf5.rackcdn.com/images/kraft-bg.jpg);
+  bottom: 0;
+  max-width: 100%; }
+  footer::before, footer::after {
+    content: ' ';
+    display: table; }
+  footer::after {
+    clear: both; }
+  footer #ftopbar h3 {
+    width: 33.33333%;
+    float: left;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    text-align: center; }
+    @media screen and (min-width: 40em) {
+      footer #ftopbar h3 {
+        padding-left: 0.9375rem;
+        padding-right: 0.9375rem; } }
+    footer #ftopbar h3:last-child:not(:first-child) {
+      float: right; }
+  footer #ftopbar h1 {
+    width: 33.33333%;
+    float: left;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    text-align: center; }
+    @media screen and (min-width: 40em) {
+      footer #ftopbar h1 {
+        padding-left: 0.9375rem;
+        padding-right: 0.9375rem; } }
+    footer #ftopbar h1:last-child:not(:first-child) {
+      float: right; }
+    footer #ftopbar h1 a {
+      text-decoration: none;
+      color: black; }
+  footer #fproductslist {
+    max-width: 100rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between; }
+    footer #fproductslist::before, footer #fproductslist::after {
+      content: ' ';
+      display: table; }
+    footer #fproductslist::after {
+      clear: both; }
+    footer #fproductslist #footleft {
+      width: 25%;
+      float: left;
+      padding-left: 0.625rem;
+      padding-right: 0.625rem;
+      display: inline-block;
+      list-style: none;
+      font-weight: bold; }
+      @media screen and (min-width: 40em) {
+        footer #fproductslist #footleft {
+          padding-left: 0.9375rem;
+          padding-right: 0.9375rem; } }
+      footer #fproductslist #footleft:last-child:not(:first-child) {
+        float: right; }
+    footer #fproductslist #flimited ul {
+      width: 25%;
+      float: left;
+      padding-left: 0.625rem;
+      padding-right: 0.625rem;
+      display: flex;
+      list-style: none;
+      font-weight: bold; }
+      @media screen and (min-width: 40em) {
+        footer #fproductslist #flimited ul {
+          padding-left: 0.9375rem;
+          padding-right: 0.9375rem; } }
+      footer #fproductslist #flimited ul:last-child:not(:first-child) {
+        float: right; }
+    footer #fproductslist #quote p {
+      width: 25%;
+      float: left;
+      padding-left: 0.625rem;
+      padding-right: 0.625rem;
+      text-align: center;
+      font-weight: bold; }
+      @media screen and (min-width: 40em) {
+        footer #fproductslist #quote p {
+          padding-left: 0.9375rem;
+          padding-right: 0.9375rem; } }
+      footer #fproductslist #quote p:last-child:not(:first-child) {
+        float: right; }
+    footer #fproductslist form {
+      width: 25%;
+      float: left;
+      padding-left: 0.625rem;
+      padding-right: 0.625rem; }
+      @media screen and (min-width: 40em) {
+        footer #fproductslist form {
+          padding-left: 0.9375rem;
+          padding-right: 0.9375rem; } }
+      footer #fproductslist form:last-child:not(:first-child) {
+        float: right; }
+
 /*# sourceMappingURL=style.css.map */
