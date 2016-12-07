@@ -4,6 +4,14 @@
 @include foundation-grid;
 
 $large-screen:800px;
+$grid-row-width: 100rem;
+$belowice-padding:590px;
+$primary-font-color:#AEA288;
+$over-text-color:#FFF;
+$padding-belowice:120px 0;
+$large-screen: 650px;
+$price-color:#9c3e14;
+
 
 @import "header";
 @import "fieldnotes";

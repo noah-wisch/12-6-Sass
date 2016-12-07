@@ -1,18 +1,24 @@
-$grid-row-width: 100rem;
-$belowice-padding:590px;
-$below-ice-text-margin:-480px;
-
 header {
     @include grid-row();
-    
+
         .email-list {
             @include grid-column(4);
             text-decoration:none;
         }
 
+        a {
+            color:black;
+            font-weight:bold;
+        }
+
         nav {
             @include grid-column(4);
             text-align:center;
+            // display: none;
+
+            //     @include breakpoint($large-screen) {
+            //         display: block;
+            //     }
 
                 ul {
                     display:flex;
@@ -22,7 +28,7 @@ header {
                     a {
                         text-decoration:none;
                         font-weight:bold;
-                        color:#AEA288;
+                        color:$primary-font-color;
                     }
                 }
         }
@@ -42,21 +48,20 @@ header {
         .icetext {
             @include grid-column(12);
             text-align:center;
-            color:#FFF;
+            color:$over-text-color;
             z-index:5;
             font-size:.8em;
-            padding: 100px 0;
+            padding: 150px 0;
 
                 h3 {
-                    border:2px solid #FFF;
-                    margin-left:1%;
-                    margin-right:1%;
+                    border:2px solid $over-text-color;
+                    margin:0 20%;
                     padding:10px 2px;
                     font-size:.7em;
 
                         a {
                             text-decoration:none;
-                            color:#FFF;
+                            color:$over-text-color;
                         }
                 }
         }
@@ -66,35 +71,39 @@ header {
     @include grid-row();
 
     #lunar {
+
         @include grid-column(8);
         background-image:url(https://0041b200f62b3b1e2348-1120f113e97866ae33baf6d37d9ffbd6.ssl.cf5.rackcdn.com/images/lunacy_AB.jpg);
-        // padding-top:$belowice-padding;
         z-index:0;
         background-repeat:no-repeat;
         background-position:center;
-        // height:;
+        padding:122px 0;
+
+        // display:none;
+
+        //     @include breakpoint($large-screen) {
+        //         display: block;
+        //     }
 
         .lunartext {
             text-align:center;
-            color:#FFF;
+            color:$over-text-color;
             z-index:5;
             font-size:.8em;
-            // margin-top:$below-ice-text-margin;
 
-             h2 {
-                        font-size:1.2em;
+                h2 {
+                    font-size:1.2em;
                     }
                     
                 h3 {
-                    border:2px solid #FFF;
-                    margin-left:1%;
-                    margin-right:1%;
-                    padding:10px 2px 10px 2px;
+                    border:2px solid $over-text-color;
+                    margin:0 20%;
+                    padding:10px 2px;
                     font-size:.7em;
 
                         a {
                             text-decoration:none;
-                            color:#FFF;
+                            color:$over-text-color;
                         }
                 }
         }
@@ -103,18 +112,21 @@ header {
         #events {
             @include grid-column(4);
             background-image:url(https://0041b200f62b3b1e2348-1120f113e97866ae33baf6d37d9ffbd6.ssl.cf5.rackcdn.com/images/B_shop_deboss.jpg);
-            // padding-top:$belowice-padding;
             z-index:0;
             background-repeat:no-repeat;
             background-position:center;
-            height:420px;
+            padding:121px 0;
+
+            // @include breakpoint($large-screen) {
+            //     @include grid-column(12);
+            //     display:block;
+            // }
 
             .eventstext {
                 text-align:center;
-                color:#FFF;
+                color:$over-text-color;
                 z-index:5;
                 font-size:.8em;
-                // margin-top:-482px;
 
                     h1 {
                         font-weight:lighter;
@@ -125,17 +137,56 @@ header {
                     }
 
                     h3 {
-                        border:2px solid #FFF;
-                        margin-left:1%;
-                        margin-right:1%;
-                        padding:10px 2px 10px 2px;
+                        border:2px solid $over-text-color;
+                        margin:0 20%;
+                        padding:10px 2px;
                         font-size:.7em;
 
                             a {
                                 text-decoration:none;
-                                color:#FFF;
+                                color:$over-text-color;
                                 }
                         }   
                 }
             }
+}
+
+#pagebreak {
+    @include grid-row();
+
+        h1 {
+            @include grid-column(12);
+            text-align:center;
+        }
+        h2 {
+            @include grid-column(12);
+            text-align:center;
+            color:$primary-font-color;
+        }
+}
+
+.fnotes {
+    @include grid-row();
+
+    ul {
+        @include grid-column(12);
+        display:flex;
+        justify-content:space-between;
+        list-style:none;
+        text-align:center;
+
+            li {
+                text-decoration:none;
+
+                .name {
+                    font-weight:bold;
+                    text-transform:uppercase;
+                }
+
+                .price {
+                    font-weight:bold;
+                    color:$price-color;
+                }
+            }
+    }
 }

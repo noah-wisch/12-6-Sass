@@ -1309,6 +1309,9 @@ header {
         padding-right: 0.9375rem; } }
     header .email-list:last-child:not(:first-child) {
       float: right; }
+  header a {
+    color: black;
+    font-weight: bold; }
   header nav {
     width: 33.33333%;
     float: left;
@@ -1362,7 +1365,7 @@ header {
     color: #FFF;
     z-index: 5;
     font-size: .8em;
-    padding: 100px 0; }
+    padding: 150px 0; }
     @media screen and (min-width: 40em) {
       #ice .icetext {
         padding-left: 0.9375rem;
@@ -1371,8 +1374,7 @@ header {
       float: right; }
     #ice .icetext h3 {
       border: 2px solid #FFF;
-      margin-left: 1%;
-      margin-right: 1%;
+      margin: 0 20%;
       padding: 10px 2px;
       font-size: .7em; }
       #ice .icetext h3 a {
@@ -1396,7 +1398,8 @@ header {
     background-image: url(https://0041b200f62b3b1e2348-1120f113e97866ae33baf6d37d9ffbd6.ssl.cf5.rackcdn.com/images/lunacy_AB.jpg);
     z-index: 0;
     background-repeat: no-repeat;
-    background-position: center; }
+    background-position: center;
+    padding: 122px 0; }
     @media screen and (min-width: 40em) {
       .belowice #lunar {
         padding-left: 0.9375rem;
@@ -1412,9 +1415,8 @@ header {
         font-size: 1.2em; }
       .belowice #lunar .lunartext h3 {
         border: 2px solid #FFF;
-        margin-left: 1%;
-        margin-right: 1%;
-        padding: 10px 2px 10px 2px;
+        margin: 0 20%;
+        padding: 10px 2px;
         font-size: .7em; }
         .belowice #lunar .lunartext h3 a {
           text-decoration: none;
@@ -1428,7 +1430,7 @@ header {
     z-index: 0;
     background-repeat: no-repeat;
     background-position: center;
-    height: 420px; }
+    padding: 121px 0; }
     @media screen and (min-width: 40em) {
       .belowice #events {
         padding-left: 0.9375rem;
@@ -1446,12 +1448,79 @@ header {
         font-size: 1.2em; }
       .belowice #events .eventstext h3 {
         border: 2px solid #FFF;
-        margin-left: 1%;
-        margin-right: 1%;
-        padding: 10px 2px 10px 2px;
+        margin: 0 20%;
+        padding: 10px 2px;
         font-size: .7em; }
         .belowice #events .eventstext h3 a {
           text-decoration: none;
           color: #FFF; }
+
+#pagebreak {
+  max-width: 100rem;
+  margin-left: auto;
+  margin-right: auto; }
+  #pagebreak::before, #pagebreak::after {
+    content: ' ';
+    display: table; }
+  #pagebreak::after {
+    clear: both; }
+  #pagebreak h1 {
+    width: 100%;
+    float: left;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    text-align: center; }
+    @media screen and (min-width: 40em) {
+      #pagebreak h1 {
+        padding-left: 0.9375rem;
+        padding-right: 0.9375rem; } }
+    #pagebreak h1:last-child:not(:first-child) {
+      float: right; }
+  #pagebreak h2 {
+    width: 100%;
+    float: left;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    text-align: center;
+    color: #AEA288; }
+    @media screen and (min-width: 40em) {
+      #pagebreak h2 {
+        padding-left: 0.9375rem;
+        padding-right: 0.9375rem; } }
+    #pagebreak h2:last-child:not(:first-child) {
+      float: right; }
+
+.fnotes {
+  max-width: 100rem;
+  margin-left: auto;
+  margin-right: auto; }
+  .fnotes::before, .fnotes::after {
+    content: ' ';
+    display: table; }
+  .fnotes::after {
+    clear: both; }
+  .fnotes ul {
+    width: 100%;
+    float: left;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    text-align: center; }
+    @media screen and (min-width: 40em) {
+      .fnotes ul {
+        padding-left: 0.9375rem;
+        padding-right: 0.9375rem; } }
+    .fnotes ul:last-child:not(:first-child) {
+      float: right; }
+    .fnotes ul li {
+      text-decoration: none; }
+      .fnotes ul li .name {
+        font-weight: bold;
+        text-transform: uppercase; }
+      .fnotes ul li .price {
+        font-weight: bold;
+        color: #9c3e14; }
 
 /*# sourceMappingURL=style.css.map */
