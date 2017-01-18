@@ -1302,13 +1302,17 @@ header {
     float: left;
     padding-left: 0.625rem;
     padding-right: 0.625rem;
-    text-decoration: none; }
+    text-decoration: none;
+    display: none; }
     @media screen and (min-width: 40em) {
       header .email-list {
         padding-left: 0.9375rem;
         padding-right: 0.9375rem; } }
     header .email-list:last-child:not(:first-child) {
       float: right; }
+    @media screen and (min-width: 40.625em) {
+      header .email-list {
+        display: block; } }
   header a {
     color: black;
     font-weight: bold; }
@@ -1327,7 +1331,8 @@ header {
     header nav ul {
       display: flex;
       list-style: none;
-      justify-content: space-between; }
+      justify-content: space-between;
+      padding: 0px; }
       header nav ul a {
         text-decoration: none;
         font-weight: bold;
@@ -1338,20 +1343,25 @@ header {
     padding-left: 0.625rem;
     padding-right: 0.625rem;
     text-decoration: none;
-    width: 9%; }
+    width: 9%;
+    display: none; }
     @media screen and (min-width: 40em) {
       header .signing {
         padding-left: 0.9375rem;
         padding-right: 0.9375rem; } }
     header .signing:last-child:not(:first-child) {
       float: right; }
+    @media screen and (min-width: 40.625em) {
+      header .signing {
+        display: block; } }
 
 #ice {
   max-width: 100rem;
   margin-left: auto;
   margin-right: auto;
   background-image: url(https://0041b200f62b3b1e2348-1120f113e97866ae33baf6d37d9ffbd6.ssl.cf5.rackcdn.com/images/_1300x510_crop_center-center_85/blackice_hero.jpg);
-  max-width: 100%; }
+  max-width: 100%;
+  background-image: cover; }
   #ice::before, #ice::after {
     content: ' ';
     display: table; }
@@ -1400,13 +1410,18 @@ header {
     z-index: 0;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 122px 0; }
+    background-image: cover;
+    height: 400px;
+    display: none; }
     @media screen and (min-width: 40em) {
       .belowice #lunar {
         padding-left: 0.9375rem;
         padding-right: 0.9375rem; } }
     .belowice #lunar:last-child:not(:first-child) {
       float: right; }
+    @media screen and (min-width: 40.625em) {
+      .belowice #lunar {
+        display: block; } }
     .belowice #lunar .lunartext {
       text-align: center;
       color: #FFF;
@@ -1423,21 +1438,35 @@ header {
           text-decoration: none;
           color: #FFF; }
   .belowice #events {
-    width: 33.33333%;
+    width: 100%;
     float: left;
     padding-left: 0.625rem;
-    padding-right: 0.625rem;
-    background-image: url(https://0041b200f62b3b1e2348-1120f113e97866ae33baf6d37d9ffbd6.ssl.cf5.rackcdn.com/images/B_shop_deboss.jpg);
-    z-index: 0;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 121px 0; }
+    padding-right: 0.625rem; }
     @media screen and (min-width: 40em) {
       .belowice #events {
         padding-left: 0.9375rem;
         padding-right: 0.9375rem; } }
     .belowice #events:last-child:not(:first-child) {
       float: right; }
+    @media screen and (min-width: 40.625em) {
+      .belowice #events {
+        width: 33.33333%;
+        float: left;
+        padding-left: 0.625rem;
+        padding-right: 0.625rem;
+        background-image: url(https://0041b200f62b3b1e2348-1120f113e97866ae33baf6d37d9ffbd6.ssl.cf5.rackcdn.com/images/B_shop_deboss.jpg);
+        z-index: 0;
+        background-repeat: no-repeat;
+        background-image: cover;
+        background-position: center;
+        height: 400px; } }
+  @media screen and (min-width: 40.625em) and (min-width: 40em) {
+    .belowice #events {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem; } }
+    @media screen and (min-width: 40.625em) {
+        .belowice #events:last-child:not(:first-child) {
+          float: right; } }
     .belowice #events .eventstext {
       text-align: center;
       color: #FFF;
@@ -1490,177 +1519,6 @@ header {
         padding-right: 0.9375rem; } }
     #pagebreak h2:last-child:not(:first-child) {
       float: right; }
-
-.fnotes1 {
-  max-width: 100rem;
-  margin-left: auto;
-  margin-right: auto; }
-  .fnotes1::before, .fnotes1::after {
-    content: ' ';
-    display: table; }
-  .fnotes1::after {
-    clear: both; }
-  .fnotes1 ul {
-    width: 100%;
-    float: left;
-    padding-left: 0.625rem;
-    padding-right: 0.625rem;
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    text-align: center; }
-    @media screen and (min-width: 40em) {
-      .fnotes1 ul {
-        padding-left: 0.9375rem;
-        padding-right: 0.9375rem; } }
-    .fnotes1 ul:last-child:not(:first-child) {
-      float: right; }
-    .fnotes1 ul li {
-      text-decoration: none;
-      border: 1px solid lightgray; }
-      .fnotes1 ul li .name {
-        font-weight: bold;
-        text-transform: uppercase; }
-      .fnotes1 ul li .price {
-        font-weight: bold;
-        color: #9c3e14; }
-
-.fnotes2 {
-  max-width: 100rem;
-  margin-left: auto;
-  margin-right: auto; }
-  .fnotes2::before, .fnotes2::after {
-    content: ' ';
-    display: table; }
-  .fnotes2::after {
-    clear: both; }
-  .fnotes2 ul {
-    width: 100%;
-    float: left;
-    padding-left: 0.625rem;
-    padding-right: 0.625rem;
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    text-align: center; }
-    @media screen and (min-width: 40em) {
-      .fnotes2 ul {
-        padding-left: 0.9375rem;
-        padding-right: 0.9375rem; } }
-    .fnotes2 ul:last-child:not(:first-child) {
-      float: right; }
-    .fnotes2 ul li {
-      text-decoration: none;
-      border: 1px solid lightgray; }
-      .fnotes2 ul li .name {
-        font-weight: bold;
-        text-transform: uppercase; }
-      .fnotes2 ul li .price {
-        font-weight: bold;
-        color: #9c3e14; }
-
-footer {
-  max-width: 100rem;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: url(https://0041b200f62b3b1e2348-1120f113e97866ae33baf6d37d9ffbd6.ssl.cf5.rackcdn.com/images/kraft-bg.jpg);
-  bottom: 0;
-  max-width: 100%; }
-  footer::before, footer::after {
-    content: ' ';
-    display: table; }
-  footer::after {
-    clear: both; }
-  footer #ftopbar h3 {
-    width: 33.33333%;
-    float: left;
-    padding-left: 0.625rem;
-    padding-right: 0.625rem;
-    text-align: center; }
-    @media screen and (min-width: 40em) {
-      footer #ftopbar h3 {
-        padding-left: 0.9375rem;
-        padding-right: 0.9375rem; } }
-    footer #ftopbar h3:last-child:not(:first-child) {
-      float: right; }
-  footer #ftopbar h1 {
-    width: 33.33333%;
-    float: left;
-    padding-left: 0.625rem;
-    padding-right: 0.625rem;
-    text-align: center; }
-    @media screen and (min-width: 40em) {
-      footer #ftopbar h1 {
-        padding-left: 0.9375rem;
-        padding-right: 0.9375rem; } }
-    footer #ftopbar h1:last-child:not(:first-child) {
-      float: right; }
-    footer #ftopbar h1 a {
-      text-decoration: none;
-      color: black; }
-  footer #fproductslist {
-    max-width: 100rem;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: space-between; }
-    footer #fproductslist::before, footer #fproductslist::after {
-      content: ' ';
-      display: table; }
-    footer #fproductslist::after {
-      clear: both; }
-    footer #fproductslist #footleft {
-      width: 25%;
-      float: left;
-      padding-left: 0.625rem;
-      padding-right: 0.625rem;
-      display: inline-block;
-      list-style: none;
-      font-weight: bold; }
-      @media screen and (min-width: 40em) {
-        footer #fproductslist #footleft {
-          padding-left: 0.9375rem;
-          padding-right: 0.9375rem; } }
-      footer #fproductslist #footleft:last-child:not(:first-child) {
-        float: right; }
-    footer #fproductslist #flimited ul {
-      width: 25%;
-      float: left;
-      padding-left: 0.625rem;
-      padding-right: 0.625rem;
-      display: flex;
-      list-style: none;
-      font-weight: bold; }
-      @media screen and (min-width: 40em) {
-        footer #fproductslist #flimited ul {
-          padding-left: 0.9375rem;
-          padding-right: 0.9375rem; } }
-      footer #fproductslist #flimited ul:last-child:not(:first-child) {
-        float: right; }
-    footer #fproductslist #quote p {
-      width: 25%;
-      float: left;
-      padding-left: 0.625rem;
-      padding-right: 0.625rem;
-      text-align: center;
-      font-weight: bold; }
-      @media screen and (min-width: 40em) {
-        footer #fproductslist #quote p {
-          padding-left: 0.9375rem;
-          padding-right: 0.9375rem; } }
-      footer #fproductslist #quote p:last-child:not(:first-child) {
-        float: right; }
-    footer #fproductslist form {
-      width: 25%;
-      float: left;
-      padding-left: 0.625rem;
-      padding-right: 0.625rem; }
-      @media screen and (min-width: 40em) {
-        footer #fproductslist form {
-          padding-left: 0.9375rem;
-          padding-right: 0.9375rem; } }
-      footer #fproductslist form:last-child:not(:first-child) {
-        float: right; }
 
 footer {
   max-width: 100rem;

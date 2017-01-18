@@ -1,0 +1,53 @@
+.fnotes1 {
+    @include grid-row();
+
+    ul {
+        @include grid-column(12);
+        display:flex;
+        justify-content:space-between;
+        list-style:none;
+        text-align:center;
+
+            li {
+                text-decoration:none;
+                border:$border;
+
+                .name {
+                    font-weight:bold;
+                    text-transform:uppercase;
+                }
+
+                .price {
+                    font-weight:bold;
+                    color:$price-color;
+                }
+            }
+    }
+}
+
+.fnotes2 {
+    @include grid-row();
+
+    ul {
+        @include grid-column(12);
+        display:flex;
+        justify-content:space-between;
+        list-style:none;
+        text-align:center;
+
+            li {
+                text-decoration:none;
+                border:$border;
+
+                .name {
+                    font-weight:bold;
+                    text-transform:uppercase;
+                }
+
+                .price {
+                    font-weight:bold;
+                    color:$price-color;
+                }
+            }
+    }
+}
